@@ -70,7 +70,7 @@ function initMobileNav() {
 // 4. SMOOTH SCROLLING WITH OFFSET CORRECTION
 // ==========================================================================
 function initSmoothScroll() {
-    const scrollLinks = document.querySelectorAll('a[href^="#"], #hero-cta-btn');
+    const scrollLinks = document.querySelectorAll('a[href^="#"]:not(#open-form-btn), #hero-cta-btn');
 
     scrollLinks.forEach(link => {
         link.addEventListener("click", function(e) {
